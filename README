@@ -1,6 +1,6 @@
 # 🎬 Popcorns
 
-Popcorns is a responsive movie web app built with React and Tailwind CSS, integrating with the TMDB API to showcase popular movies. Users can add movies to their **Favorites** and **Watch Later** lists with smooth UI interactions and state persistence.
+Popcorns is a responsive movie web app built with React and Tailwind CSS, integrating with the TMDB API to showcase popular movies. Users can add movies to their **Favorites** and **Watch Later** lists with smooth UI interactions and state persistence. Basically it is a place where users can browse , search and create their personal collection.
 
 ---
 
