@@ -54,6 +54,7 @@ const Watchlist = () => {
                 genre={movie.genre_ids?.map(id => genres[id]).filter(Boolean).join(', ')}
                 isWatchlisted={true}
                 onWatchlist={() => toggleWatchlist(movie)}
+                page='watchlater'
               />
             ))}
           </div>

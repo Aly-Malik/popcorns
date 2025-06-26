@@ -9,6 +9,7 @@ const MovieCard = ({
   isFavourite = false,
   onWatchlist = () => {},
   isWatchlisted = false,
+  page = "", // new prop here
 }) => {
   const [isAnimating, setIsAnimating] = useState(false)
 
@@ -26,6 +27,7 @@ const MovieCard = ({
           alt={title}
           className="w-full h-full object-fill"
         />
+        {page !== "watchlater" && (
         <button
           onClick={handleFavouriteClick}
           className={`absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-full p-1.5 shadow-lg hover:bg-pink-50 transition-all duration-300 ${
@@ -58,10 +60,12 @@ const MovieCard = ({
             </svg>
           )}
         </button>
+        )}
       </div>
       <div className="p-2.5 flex flex-col flex-1 bg-gradient-to-b from-slate-800/95 to-slate-900/95 backdrop-blur-sm">
         <h2 className="text-base font-bold text-slate-100 mb-1 truncate">{title}</h2>
         <p className="text-slate-400 text-sm mb-2">{year} &bull; {genre}</p>
+        {page !== "favourites" && (
         <button
           onClick={onWatchlist}
           className={`mt-auto px-3 py-1.5 rounded-lg text-sm font-semibold transition-colors duration-200 ${
@@ -72,6 +76,7 @@ const MovieCard = ({
         >
           {isWatchlisted ? 'Remove from Watchlist' : 'Add to Watchlist'}
         </button>
+        )}
       </div>
     </div>
   )

@@ -42,6 +42,7 @@ const Favourites = () => {
                 genre={movie.genre}
                 isFavourite={true}
                 onFavourite={() => toggleFavourite(movie)}
+                page='favourites'
               />
             ))}
           </div>

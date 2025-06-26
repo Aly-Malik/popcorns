@@ -12,7 +12,7 @@ const Navbar = ({onSearch,onHomeClick}) => {
 
   return (
     <nav
-      className="bg-black px-4 sm:px-8 py-4 shadow-md"
+      className="bg-black px-4 sm:px-8 py-3 shadow-md "
       style={{ fontFamily: 'Poppins, sans-serif' }}
     >
       <div className="flex flex-col sm:flex-row items-center justify-between gap-y-4">  
