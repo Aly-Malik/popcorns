@@ -12,7 +12,7 @@ Popcorns is a responsive movie web app built with React and Tailwind CSS, integr
 - 🎨 Fully responsive design using Tailwind CSS
 - 🔁 Animated UI with transitions and hover effects
 - 🧠 Centralized global state using React Context API
-- 🌐 Deployed on Vercel (or your hosting platform)
+- 🌐 Deployed on Vercel 
 
 ---
 
